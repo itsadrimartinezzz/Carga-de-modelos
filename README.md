@@ -1,14 +1,9 @@
 # Carga de modelos - Lab 4
 
-**Autor:** [@itsadrimartinezzz](https://github.com/itsadrimartinezzz)
-
-Para este laboratorio usé la nave del lab anterior y la cargué desde un archivo OBJ. El programa está hecho en Rust y dibuja el modelo usando una función propia para rellenar triángulos.
-
-## Resultado
 
 ![Nave rosa pastel renderizada en Rust](docs/render.png)
 
-La nave queda centrada en una ventana de 1000 × 750 píxeles. Tiene un color rosa pastel y una iluminación sencilla para que se distingan sus caras. Esta imagen sale del programa, no de Blender.
+La nave queda centrada en una ventana de 1000 × 750 píxeles. Tiene un color rosa pastel y una iluminación sencilla para que se distingan sus caras
 
 ## Cómo se dibuja
 
@@ -73,14 +68,4 @@ cargo run --release --locked -- --headless
 | `assets/Nave_Espacial.obj` | Modelo del laboratorio anterior. |
 | `docs/render.png` | Imagen del resultado que aparece en este README. |
 
-## Pruebas
 
-```powershell
-cargo test --locked
-```
-
-Hay siete pruebas para revisar los índices del OBJ, el relleno de triángulos, la profundidad y el encuadre de la nave. La compilación y las pruebas se verificaron en Windows.
-
-## Dependencias
-
-Se usan `sdl2` para la ventana, `glam` para vectores y matrices, y `png` para guardar la imagen. La carga del OBJ y la función para dibujar triángulos están implementadas en el proyecto. La licencia de SDL2 está en `vendor/SDL2/LICENSE.txt`.
