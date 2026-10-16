@@ -1,0 +1,10 @@
+[package]
+name = "carga_modelos"
+version = "0.1.0"
+edition = "2021"
+description = "Lab 4: rasterizador de triangulos en Rust para cargar una nave OBJ"
+
+[dependencies]
+glam = "=0.30.9"
+png = "=0.17.16"
+sdl2 = "=0.38.0"
